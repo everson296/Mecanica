@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+/* ================= menu ================= */
+/* ----- header ----- */
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* ----- header ----- */
+#wallpaper{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#wallpaper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ----- container menu ----- */
+#containerEfeito{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    
+}
+
+#efeito{
+    height: 100%;
+    width: 130px;
+    background: rgba(27, 34, 42, .2);
+    transform: skewX(30deg);
+    position: relative;
+    top: 0;
+    right: -300px; 
+    animation: efeito linear 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#efeito2{
+    height: 100%;
+    width: 250px;
+    background: rgba(27, 34, 42, .6);
+    transform: skewX(30deg);
+    position: relative;
+    top: 0;
+    right: -300px;
+    animation: efeito2 linear 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#efeito3{
+    height: 100%;
+    width: 650px;
+    background: #1B222A;
+    transform: skewX(30deg);
+    position: relative;
+    top: 0;
+    right: -300px;
+    animation: efeito3 linear 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes efeito {
+    from {right: -720px;}
+        
+    to {right: -300px;}
+}
+
+@keyframes efeito2 {
+    from {right: -660px;}
+        
+    to {right: -300px;}
+}
+
+@keyframes efeito3 {
+    from {right: -600px;}
+        
+    to {right: -300px;}
+}
+
+/* ================= container Header Info ================= */
+#containerHeaderInfo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----- logo ----- */
+#logo{
+    height: 100%;
+    width: auto;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#logo span{
+    color: #1B222A;
+}
+/* ----- menu ----- */
+#menu{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.itensMenu{
+    color: #fff;
+    font-size: 20px;
+    font-family: poppins;
+    margin-right: 100px;
+    text-transform: capitalize;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.itensMenu:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+/* ----- centro ----- */
+#center{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#center div{
+    height: 100%;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#center div p{
+    color: #fff;
+    font-size: 6em;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#center div p:nth-child(1){
+    color: transparent;
+     -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+}
+
+/* ----- menu ----- */
+#bottom{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+#containerSocial{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+#containerSocial div{
+    height: 30px;
+    width: 200px;
+    transform: skewX(right 30deg);
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    left: -160px;
+    
+    transition: .5s;
+}
+
+#containerSocial div i{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    box-sizing: border-box;
+    
+    transition: .5s;
+}
+
+#containerSocial div:hover{
+    transition: .5s;
+    left: -50px;
+    transform: skewX(-30deg);
+}
+
+#containerSocial div:hover i{
+    transition: .5s;
+    padding-right: 80px;
+    transform: skewX(30deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
